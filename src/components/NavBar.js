@@ -14,14 +14,14 @@ export default function NavBar() {
       <div className="leftSide" id={openLinks ? "open" : "close"}>
         <img src={Logo} alt="" />
         <div className="hiddenLinks">
-          <Link to="/home"> Home </Link>
+          <Link to="/"> Home </Link>
           <Link to="/about"> About </Link>
           <Link to="/fakulteti"> Fakulteti</Link>
           <Link to="/contact"> Contact </Link>
         </div>
       </div>
       <div className="rightSide">
-      <Link to="/home"> Home </Link>
+      <Link to="/"> Home </Link>
           <Link to="/about"> About </Link>
           <Link to="/fakulteti"> Fakulteti</Link>
           <Link to="/contact"> Contact </Link>
