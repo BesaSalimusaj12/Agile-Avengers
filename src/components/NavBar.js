@@ -35,7 +35,7 @@ export default function NavBar() {
               {openDD && (
                 <div className="dropdown-content">
                 <Link to="/fakulteti/stafi"> Stafi </Link>
-                <Link to="/fakulteti/kurset"> Kurset </Link>
+                <Link to="/fakulteti/courses"> Kurset </Link>
                 <NavDropdown.Divider />
                 <Link to="/fakulteti/departamenti"> Departamentet </Link>
               </div>
