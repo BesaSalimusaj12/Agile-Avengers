@@ -1,5 +1,6 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Departamentet from "./pages/Departamentet";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/fakulteti/departamentet" element={<Departamentet />} />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

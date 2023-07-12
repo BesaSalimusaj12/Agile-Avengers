@@ -1,0 +1,47 @@
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+  }
+  
+  .rightTransparent {
+    width: 75%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .leftMenu {
+    width: 25%;
+    height: 100%;
+    background-color: #570a1d;
+    display: flex;
+    flex-direction: column;
+  }
+  .closeDiv{
+    width: 100%;
+    height: 60px;
+    display: flex;
+
+  }
+  .emptyDiv{
+    width: 75%;
+    height: 100%;
+  }
+  .closeIcon{
+    padding: 15px 0px;
+    padding-bottom: 0;
+    width: 25%;
+    height: 60%;
+    color: rgba(255, 255, 255, 0.595);
+    cursor: pointer;
+  }
+  .closeIcon:hover{
+    color: white;
+  }
+.dropdown-Icon{
+    font-size: 15px;
+}
+.ddmargin{
+    margin-top: 20px;
+}
