@@ -92,7 +92,7 @@
     margin: 0px;
     padding: 20px;
     display: block;
-
+    transition: 0.5s;
   }
   .dropdown {
     position: relative;
