@@ -6,8 +6,8 @@
   }
   
   .aboutTop {
-    width: 100%;
-    height: 45%;
+    height: auto;
+    max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
