@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/About.css";
+import "../styles/Courses.css";
 import CoursesBackground from "../assets/courses.jpg"
 
 export default function Courses() {
