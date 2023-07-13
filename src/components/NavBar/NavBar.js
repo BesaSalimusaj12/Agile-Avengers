@@ -40,7 +40,7 @@ export default function NavBar() {
                 <Link to="/fakulteti/stafi"> Stafi </Link>
                 <Link to="/fakulteti/kurset"> Kurset </Link>
                 <NavDropdown.Divider />
-                <Link to="/fakulteti/departamenti"> Departamentet </Link>
+                <Link to="/fakulteti/departamentet"> Departamentet </Link>
               </div>
               )}
           </div>
