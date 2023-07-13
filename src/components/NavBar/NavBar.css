@@ -2,6 +2,7 @@
     width: 100%;
     height: 100px;
     background-color: #570a1d;
+    /* background-color: #e60005; */
     display: flex;
     flex-direction: row;
     font-weight: bold;
@@ -91,13 +92,16 @@
     margin: 0px;
     padding: 20px;
     display: block;
-
+    transition: 0.5s;
   }
   .dropdown {
     position: relative;
     display: inline-block;
   }
-  
+  .noHoverEffect:hover{
+    background-color: #570a1d !important;
+    box-shadow: none !important;
+  }
   .dropdown-content {
     display: none;
     position: absolute;
