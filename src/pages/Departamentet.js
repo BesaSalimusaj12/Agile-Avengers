@@ -6,92 +6,106 @@ import dep3 from "../assets/departamentet3.jpg";
 import "../styles/Departamentet.css";
 
 export default function Departamentet() {
-  const [slideIndex, setSlideIndex] = useState(1);
-
-  useEffect(() => {
-    showSlides(slideIndex);
-  }, []);
-
-  const plusSlides = (n) => {
-    showSlides(slideIndex + n);
-  };
-
-  const currentSlide = (n) => {
-    showSlides(n);
-  };
-
-  const showSlides = (n) => {
-    let i;
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-      setSlideIndex(1);
-    } else if (n < 1) {
-      setSlideIndex(slides.length);
-    } else {
-      setSlideIndex(n);
-    }
-
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-  };
   return (
     <div>
       <div className="info">
         <h1> Departamentet e FTI</h1>
       </div>
-      <div className="slideshow-container">
-        <div className="mySlides fade">
-          <img src={dep1} style={{ width: "100%" }} alt="Slide 1" />
-        </div>
-
-        <div className="mySlides fade">
-          <img src={dep2} style={{ width: "100%" }} alt="Slide 2" />
-        </div>
-
-        <div className="mySlides fade">
-          <img src={dep3} style={{ width: "100%" }} alt="Slide 3" />
-        </div>
-
-        <a className="prev" onClick={() => plusSlides(-1)}>
-          ❮
-        </a>
-        <a className="next" onClick={() => plusSlides(1)}>
-          ❯
-        </a>
-
-        <div style={{ textAlign: "center" }}>
-          <span className="dot" onClick={() => currentSlide(1)}></span>
-          <span className="dot" onClick={() => currentSlide(2)}></span>
-          <span className="dot" onClick={() => currentSlide(3)}></span>
+      <div className="more">
+        <div class="card row">
+          <div class="container">
+            <h4>
+              <b>Fakulteti i Teknologjise se Informacionit (FTI)</b>
+            </h4>
+            <p>
+              Fakulteti i Teknologjisë së Informacionit është krijuar me vendim
+              të qeverisë në dhjetor 2007. Fakulteti përbehet nga Departamenti i
+              Elektronikës dhe Telekomunikacionit, Departamenti i Inxhinierisë
+              Informatike dhe Departamenti i Bazave të Informatikës (ish-QKZHTI
+              Qendra për Kërkim dhe Zhvillim në Teknologjitë e Informacionit
+              (ish-INIMA)). Departamentet e Elektronikës dhe Telekomunikacionit
+              dhe Inxhinierisë Informatike u krijuan nga ndarja e Departamentit
+              të Elektronikës të Fakultetit të Inxhinierisë Elektrike, ndërsa
+              Departamenti i Bazave të Informatikës është vazhdim i Qendrës për
+              Kërkim dhe Zhvillim (ish-INIMA i Akademisë së Shkencave).
+            </p>
+          </div>
         </div>
       </div>
-      <div className="row">
-        <div className="column">
-          <p>Departamenti i Elektronikës dhe Telekomunikacionit (DET) </p>
-          <div className="more">
-            <button>Lexo me shume</button>
+      <div className="more">
+        <div class="card row">
+          <img
+            src={dep1}
+            alt="fti"
+            style={{ width: "100%", height: "400px" }}
+          ></img>
+          <div class="container">
+            <h4>
+              <b>Departamenti i Elektronikës dhe Telekomunikacionit (DET)</b>
+            </h4>
+            <p>
+              Është vazhdim i Departamentit të Elektronikës dhe përgatit
+              inxhinierë në inxhinieri elektronike dhe inxhinieri e
+              telekomunikacioneve. Departamenti ofron edukimin universitar dhe
+              pas universitar, si dhe kërkim-zhvillim në fusha si sistemet
+              elektronike, rrjetat wireless, rrjetat e kompjuterave të
+              komandimit, studimi dhe matja e rrezatimit elektromagnetik të
+              antenave të telefonisë celulare, projektimi i rrjetave të të
+              dhënave dhe rrjetave mobile, cilësia e shërbimit në rrjetat,
+              protokollet e rrjetave me fibra optike etj.
+            </p>
           </div>
         </div>
-        <div className="column">
-          <p>Departamenti i Inxhinierisë Informatike (DII)</p>
-          <div className="more">
-            <button>Lexo me shume</button>
+      </div>
+      <div className="more">
+        <div class="card row">
+          <div class="container">
+            <h4>
+              <b>Departamenti i Inxhinierisë Informatike (DII)</b>
+            </h4>
+            <p>
+              Është vazhdim i Seksionit të Inxhinierisë së Kompjuterave i
+              Departamentit të Elektronikës dhe përgatit inxhinierë në
+              inxhinieri informatike. Departamenti ofron edukimin universitar
+              dhe pas universitar, si dhe kërkim-zhvillim në fushat e
+              arkitekturës të kompjuterave, arkitekturës të sistemeve të
+              përpunimit të informacionit, projektim i sistemeve shifrore,
+              sistemet e përparuara të shfrytëzimit, sistemet e shpërndara dhe
+              grid, Web Shërbimet, teknologjitë e rrjetave dhe të Internetit,
+              sigurisë në to, gjuhët e programimit, bazat e të dhënave,
+              inxhinieria e softuerit dhe inteligjencë artificiale.
+            </p>
           </div>
+          <img
+            src={dep2}
+            alt="fti"
+            style={{ width: "100%", height: "400px" }}
+          ></img>
         </div>
-        <div className="column">
-          {" "}
-          <p>Departamenti i Bazave të Informatikës (DBI)</p>
-          <div className="more">
-            <button>Lexo me shume</button>
+      </div>
+      <div className="more">
+        <div class="card row">
+          <img
+            src={dep3}
+            alt="fti"
+            style={{ width: "100%", height: "400px" }}
+          ></img>
+          <div class="container">
+            <h4>
+              <b>Departamenti i Bazave të Informatikës (DBI)</b>
+            </h4>
+            <p>
+              <a href="http://itc.upt.al/">
+                (Ish-Qendra për Kërkim dhe Zhvillim)
+              </a>{" "}
+              kryen veprimtari kërkimore zhvilluese të pavarur, si dhe në
+              shërbim të procesit mësimor dhe studimeve pas universitare të FTI,
+              në fushat e sistemeve të shfrytëzimit, sistemet e shpërndara,
+              rrjetat kompjuterike, teknologjitë e Internetit, bazat e të
+              dhënave dhe gjuhët e programimit. Departamenti është vazhdim i{" "}
+              <a href="http://itc.upt.al/">Qendrës për Kërkim dhe Zhvillim</a>{" "}
+              (ish-Institutit të Informatikës dhe Matematikës Aplikuar) (INIMA).
+            </p>
           </div>
         </div>
       </div>
