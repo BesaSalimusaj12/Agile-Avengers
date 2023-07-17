@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import Logo from "../assets/fti-logo.png";
+import Logo from "../../assets/fti-logo.png";
 import { Link } from "react-router-dom";
 import { VscMenu } from "react-icons/vsc";
 import { BsSearch } from 'react-icons/bs';
 import { BiDownArrow } from 'react-icons/bi';
 import { BiSolidDownArrow } from 'react-icons/bi';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Menu from "./Menu"
 
 
 
@@ -14,31 +15,24 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export default function NavBar() {
   const [openLinks, setOpenLinks] = useState(false);
   const [openDD, setOpenDD] = useState(false);
-  // const toggleNavbar = () => {
-  //   setOpenLinks(!openLinks);
-  // };
+  const toggleNavbar = () => {
+    setOpenLinks(!openLinks);
+  };
   const toggleDropdown = () => {  
     setOpenDD(!openDD);
   };
   return (
     <div className="navbar">
-      <div className="leftSide" id={openLinks ? "open" : "close"}>
-        <img src={Logo} alt="" />
-      </div>
+      <Link  className="noHoverEffect" to="/home">
+        <div className="leftSide">
+          <img src={Logo} alt="" />
+        </div> 
+      </Link>
       <div className="rightSide">
-      <Link  to="/home"> Home </Link>
-      <Link  to="/about"> About </Link>   
-         {/* <div className="dropdown">
-              <span onClick={toggleDropdown}>About {openDD ? <BiSolidDownArrow className="dropdown-icon" />:  <BiDownArrow className="dropdown-icon" /> }</span>
-              {openDD && (
-                <div className="dropdown-content">
-                
-                <Link to="/about/MisioniVizioni"> Misioni dhe vizioni </Link>
-                <Link to="/about/Objektivat"> Objektivat </Link>
-                <Link to="/about/Historiku"> Historiku </Link>
-              </div>
-              )}
-              </div>*/}
+      <Link  to="/home"> Njoftime </Link>
+          <Link to="/about"> 
+              About
+          </Link>
           <div className="dropdown">
               <span onClick={toggleDropdown}>Fakulteti {openDD ? <BiSolidDownArrow className="dropdown-icon" />:  <BiDownArrow className="dropdown-icon" /> }</span>
               {openDD && (
@@ -60,9 +54,10 @@ export default function NavBar() {
       </div>
       <div className="menutSide">
         <button> 
-          <VscMenu />
+          <VscMenu onClick={toggleNavbar}/>
         </button>
       </div>
+      {openLinks && <Menu toggleNavbar={toggleNavbar}/>}
     </div>
   );
 }
