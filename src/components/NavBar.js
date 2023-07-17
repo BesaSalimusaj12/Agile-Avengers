@@ -27,9 +27,18 @@ export default function NavBar() {
       </div>
       <div className="rightSide">
       <Link  to="/home"> Home </Link>
-          <Link to="/about"> 
-              About
-          </Link>
+      <Link  to="/about"> About </Link>   
+         {/* <div className="dropdown">
+              <span onClick={toggleDropdown}>About {openDD ? <BiSolidDownArrow className="dropdown-icon" />:  <BiDownArrow className="dropdown-icon" /> }</span>
+              {openDD && (
+                <div className="dropdown-content">
+                
+                <Link to="/about/MisioniVizioni"> Misioni dhe vizioni </Link>
+                <Link to="/about/Objektivat"> Objektivat </Link>
+                <Link to="/about/Historiku"> Historiku </Link>
+              </div>
+              )}
+              </div>*/}
           <div className="dropdown">
               <span onClick={toggleDropdown}>Fakulteti {openDD ? <BiSolidDownArrow className="dropdown-icon" />:  <BiDownArrow className="dropdown-icon" /> }</span>
               {openDD && (
