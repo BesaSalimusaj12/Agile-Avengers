@@ -7,8 +7,9 @@ import { Link } from 'react-router-dom';
 export default function Courses() {
   return (
     <div className="courses">
-      <div style={{ backgroundImage: `url(${CoursesBackground})` }}
+      <div 
         className="coursesTop"
+        style={{ backgroundImage: `url(${CoursesBackground})` }}
       >
         <div className="text-overlay">
           <h1 className="text">KURSET</h1>
