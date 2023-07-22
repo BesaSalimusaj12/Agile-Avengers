@@ -1,9 +1,11 @@
+import category1Image from './images/category1.jpg';
+
 const categoryData = [
     {
       id: 1,
       title: 'Category 1',
       description: 'Description for Category 1',
-      image: 'category1.jpg',
+      image: 'category1Image',
       slug: 'category1'
     },
     {

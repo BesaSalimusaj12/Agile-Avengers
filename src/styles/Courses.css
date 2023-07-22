@@ -13,28 +13,6 @@
     background-size: cover;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
-  
-  .coursesBottom {
-    display: flex;
-    flex-direction: column;
-    height: 55%;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  .coursesBottom p {
-    width: 1200px;
-  }
-  
-  .courses .coursesBottom h1 {
-    font-weight: 400;
-    font-size: 70px;
-    color: black;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    transform: translateY(-40px);
-  }
 
   .text-overlay {
     width: 100%;
@@ -50,7 +28,6 @@
     font-size: 50px;
     text-align: center;
     width: '100%';
-
   }
 
   .main-categories {
@@ -92,44 +69,8 @@
     background-color: #e0e0e0;
   }
 
-
-
-
-
-
-
-
   .category-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
     gap: 20px; /* Add spacing between cards */
   }
-  
-  .category-card {
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .category-image {
-    width: 120px; /* Adjust the image size as needed */
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .category-details h2 {
-    font-size: 18px; /* Adjust the heading size as needed */
-    margin-bottom: 10px;
-  }
-  
-  .category-details p {
-    font-size: 14px; /* Adjust the paragraph size as needed */
-  }
-  
